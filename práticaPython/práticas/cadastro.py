@@ -1,5 +1,5 @@
 from PySimpleGUI import PySimpleGUI as sg
-
+import hashlib  
 # Layout
 sg.theme('Reddit')
 
@@ -18,4 +18,4 @@ while True:
         break
     if eventos == 'Entrar':
         if valores['usuario'] == 'alvaro' and valores['senha'] == '123456':
-            print("Você entrou")
+            print("Você entrou")    
