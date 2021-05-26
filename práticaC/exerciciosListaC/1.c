@@ -9,7 +9,6 @@ int main(){
     printf("Digite o valor 1: ");
     scanf("%d", &x1);
 
-
     printf("Digite o valor 2: ");
     scanf("%d", &x2);
 
