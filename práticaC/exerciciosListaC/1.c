@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 
-int main(){
+int main(void){
 
     int x1, x2;
 
@@ -14,4 +14,6 @@ int main(){
     scanf("%d", &x2);
 
     printf("Resultado = %d", x1+x2);
+
+    return 0;
 }
