@@ -1,0 +1,1 @@
+// Faça uma função que receba um número inteiro e imprima o número lido é par ou impar.
