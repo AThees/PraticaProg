@@ -6,16 +6,16 @@
 
 int main(void){
 
-    int num;
+    int jorge;
 
     printf("Insira um numero: ");
-    scanf("%d",&num);
+    scanf("%d",&jorge);
 
-    if (num % 10 == 0)
-        printf("%d",num/2);
+    if (jorge % 10 == 0)
+        printf("%d",jorge/2);
 
     else 
-        printf("essse numero nao termina com 0");
+        printf("O número digitado não termina com 0");
 
     return 0;
 }
