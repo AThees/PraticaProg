@@ -2,7 +2,7 @@
 // esta quantidade. Faça a leitura da quantidade de horas na função principal.
 #include <stdio.h>
 
-int main(){
+int main(void){
 
     int horas, minutos;
 
