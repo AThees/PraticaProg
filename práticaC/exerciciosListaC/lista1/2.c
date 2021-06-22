@@ -6,16 +6,12 @@
 
 int main(void){
     
-    int salarioInicial, porcentagem;
+    float salarioInicial, porcentagem;
 
-    printf("Qual o salario atual: ");
-    scanf("%d",&salarioInicial);
+    scanf("%f",&salarioInicial);
 
-    printf("Pontos percentuais do aumento: ");
-    scanf("%d",&porcentagem);
+    scanf("%f",&porcentagem);
 
-    printf("Novo valor = %d \nAumento = %d", salarioInicial* porcentagem/100 + salarioInicial, salarioInicial * porcentagem/100); 
-
-
+    printf("Novo salario: %.2f \nAumento: %.2f", salarioInicial* porcentagem/100 + salarioInicial, salarioInicial * porcentagem/100); 
 
 }

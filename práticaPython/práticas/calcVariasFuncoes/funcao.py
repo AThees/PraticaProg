@@ -1,5 +1,4 @@
 import math as mh
-import PySimpleGUI as sg
 
 def segundoGrau(a ,b , c):
     

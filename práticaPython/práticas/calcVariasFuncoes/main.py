@@ -16,8 +16,7 @@ layoutSegundoGrau = [
     [sg.Text('a:'),sg.Input(key='a', size=(5, 1))],    
     [sg.Text('b:'),sg.Input(key='b', size=(5, 1))],    
     [sg.Text('c:'),sg.Input(key='c', size=(5, 1))], 
-    [sg.Button('Calcular!')]
-    
+    [sg.Button('Calcular!')],    
     ]
 
 
@@ -33,5 +32,7 @@ while True:
     if eventos == 'Calculadora de funções do segundo grau':
         eventos2, valores2 = janelaSegundoGrau.read()
         if eventos2 == 'Calcular!':
-            print(segundoGrau(valores2['a'], valores2['b'], valores2['c']))
+            resultadoSegundoGrau = segundoGrau(valores2['a'], valores2['b'], valores2['c'])
+            print(resultadoSegundoGrau)
+            
 

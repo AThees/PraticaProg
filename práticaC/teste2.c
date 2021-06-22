@@ -1,18 +1,26 @@
 #include <stdio.h>
 
-int main (void){
+int main() {
+    float a, b;
+    char operacao;
 
-    int a, b;
-    float x, y;
-    a = 2;
-    b =3;
-    x = 2.8;
-    y = 4;
+    scanf("%f%f", &a, &b);
 
+    scanf("%*c %c", &operacao);
 
-    printf("%f", a + x);
+    switch (operacao){
 
+        case '+':   printf("%f + %f = %.1f", a, b, a + b);
+                    break;
 
+        case '-':   printf("%f - %f = %.1f", a, b, a - b);
+                    break;
 
+        case '*': printf("%f * %f = %.1f", a, b, a * b) ;
 
+        case '/': printf("%f / %f = %.1f", a, b, a / b);
+
+    }
+
+    return 0;
 }
