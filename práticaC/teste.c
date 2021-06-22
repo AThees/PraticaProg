@@ -42,7 +42,7 @@ void dados_totais(float raio){
 
     area = calcular_area(raio);
 
-    printf("Raio: %.2f\nDiâmetro: %.2f\nCircunferência: %.2f\nÁrea: %.2f\n\n\n", raio, diametro, circunferencia, area);
+    printf("Raio: %.2f\nDiâmetro: %.2f\nCircunferência: %.2f\nÁrea: %.2f\n\n", raio, diametro, circunferencia, area);
 
 }
 

@@ -1,5 +1,5 @@
 # Importar bibliotecas
-import win32api, win32con, time, threading
+import win32api, win32con, time
 
 def click(x,y):
     win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN,x,y,0,0)
