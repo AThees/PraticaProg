@@ -1,30 +1,32 @@
 #include <stdio.h>
 
-void imprimeN (int n)
-{
+void printaTriangulo (int numero){
+    
     int i;
     
     i = 1;
-    while (i <= n)
-    {
+    while (i <= numero){
+
         printf ("%d ", i);
         i++;
+
     }
+
     printf ("\n");
 }
 
-int main()
-{
-    int n;
+int main(void){
+    int num;
     int i;
-    printf ("Digite o valor de n: ");
-    scanf ("%d", &n);
+
+    scanf ("%d", &num);
     
     i = 1;
-    while (i <= n)
-    {
-        imprimeN (i);
+    while (i <= num){
+
+        printaTriangulo (i);
         i++;
+
     }
     
     return 0;
