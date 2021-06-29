@@ -2,30 +2,33 @@
 
 void f_calculaFormula(int v_num){
 
-    int i, iFat, n, v_soma;
-    float v_e;
+    int v_denominador, n, v_multiplicador;
+    float v_result, v_soma, iFat;
 
-    v_e = 0;
-    i = 1;
-    v_soma = 0;
+    v_result = 0;
+    v_denominador = 1;
+    v_soma = 1;
+    iFat = 1;
+    v_multiplicador = 1;
 
-    while(i < v_num){
+    while(v_denominador <= v_num){
 
-        for(iFat = 1; i > 1; i = i - 1){     
+    do{
+        iFat = iFat * v_multiplicador;
 
-        iFat = iFat * n;
-    
-        }
+        v_multiplicador++;
 
-        v_e = 1 / iFat;
+    } while (v_multiplicador<=v_denominador);
 
-        v_soma = v_soma + v_e;
+        v_result = 1 / iFat;
 
-        i++;
+        v_soma = v_soma + v_result;
+
+        v_denominador++;
 
     }
 
-    printf("E = %.6f", v_e);
+    printf("E = %.6f", v_soma);
 
 }
 
