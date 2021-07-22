@@ -15,7 +15,7 @@ int main()
       scanf("%d", &C);
 
       int Delta;
-      Delta = pow(B, 2) - 4 * C;
+      Delta = pow(B, 2) - 4 * A * C;
 
       if(Delta < 0){
 

@@ -2,7 +2,9 @@
 
 int main(void){
 
-    int i, tamanho, media, soma;
+    int i, tamanho;
+
+    float media, soma;
 
     soma = 0;
 
@@ -22,10 +24,9 @@ int main(void){
 
     }
 
-    media = soma / tamanho - 1;
+    media = (float)soma / (float)tamanho;
 
     printf("Media = %.2f", media);
-
 
     return 0;
 }

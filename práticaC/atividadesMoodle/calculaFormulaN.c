@@ -37,9 +37,7 @@ int main(void){
 
     int v_num;
 
-    v_num = 10;
-
-    // scanf("%d", &v_num);
+    scanf("%d", &v_num);
 
     f_calculaFormula(v_num);
 

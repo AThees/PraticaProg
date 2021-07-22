@@ -1,17 +1,18 @@
 #include <stdio.h>
 int main(){
 
-    int v_denominador, v_multiplicador=1;
+    int i, v_multiplicador=1;
     float iFat;
 
-    v_denominador = 3;
+    i = 3;
     iFat=1;
 
     do{
         iFat = iFat * v_multiplicador;
         v_multiplicador++;
-    } while (v_multiplicador<=v_denominador);
+    } while (v_multiplicador<=i);
 
+    printf("%f", iFat);
 }
 
 
