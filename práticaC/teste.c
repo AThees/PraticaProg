@@ -1,16 +1,13 @@
 #include <stdio.h>
 
-int main(){
-    int num;
+int main(void){
 
-    num = 1;
+    char string[9];
 
-    while (True){
+    fgets(string, 8, stdin);
 
-        num++;
-        printf("%d\n", num);
+    puts(string);
 
 
-    }
 
 }
