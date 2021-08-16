@@ -17,9 +17,13 @@ int main(void){
 
     Livro livroBusca;
 
-    char busca[50], *resultado;
+    char busca[50], *nulo = '\0';
 
-    int i, contem;
+    int i, encontrou;
+
+    encontrou = 0;
+
+    memset(busca, '\0', tam);
 
     for(i = 0; i < tam; i++){
 
@@ -37,31 +41,30 @@ int main(void){
 
     fgets(busca, 50, stdin);
 
+    busca[strlen(busca) - 1] = '\0';
+
     for(i = 0; i < tam; i++){
 
-        contem = 0;
+        if(strstr(livros[i].titulo, busca) != nulo){
 
-        resultado = strstr(livros[i].titulo, busca);
-
-        if(resultado =! '\0'){
-
-            livroBusca = livros[i];
+            livroBusca = livros[i]; 
+            encontrou = 1;
             break;
 
         }
 
-        else{
-
-            continue;
-
-        }
-
-
-
-
     }
 
-    printf("%s", livroBusca.titulo);
+    if(encontrou == 0){
+        printf("Livro não encontrado");
+    }
+
+    else{
+        printf("Título: %s", livroBusca.titulo);
+        printf("Autor: %s", livroBusca.autor);
+        printf("Código: %d\n", livroBusca.codigo);
+        printf("Preço: %f", livroBusca.preco);
+    }
 
 
 

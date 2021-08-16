@@ -1,47 +1,65 @@
 #include <stdio.h>
-#include <math.h>
+#include <string.h>
+#define tam 6
 
-typedef struct {
-    int x;
-    int y;
-} Ponto;
+typedef struct{
 
-    Ponto maisProximo(Ponto p1, Ponto p2){
+    char titulo[50];
+    char autor[30];
+    int codigo;
+    float preco;
 
-        int distancia1, distancia2;
-
-
-
-
-
-
-    }
-
-
-
-
+} Livro;
 
 int main(void){
 
-    Ponto p1, p2, p3, p4, maisProximoParcial1, maisProximoParcial2, maisProximo;
+    Livro livros[tam];
 
-    scanf("%d", &p1.x);
-    scanf("%d", &p1.y);
+    Livro livroBusca;
 
-    scanf("%d", &p2.x);
-    scanf("%d", &p2.y);
+    char busca[50], *nulo = '\0';
 
-    scanf("%d", &p3.x);
-    scanf("%d", &p3.y);
+    int i, encontrou;
 
-    scanf("%d", &p4.x);
-    scanf("%d", &p4.y);
+    memset(busca, '\0', tam);
+
+    for(i = 0; i < tam; i++){
+
+        fgets(livros[i].titulo , 50, stdin);
+
+        fgets(livros[i].autor , 30, stdin);
+
+        scanf("%d", &livros[i].codigo);
+        getchar();
+
+        scanf("%f", &livros[i].preco);
+        getchar();
+
+    }
+
+    fgets(busca, 50, stdin);
+
+    for(i = 0; i < tam; i++){
+
+        if(strstr(livros[i].titulo, busca) != nulo){
+            
+            livroBusca = livros[i]; 
+            encontrou = 1;
+            break;
+
+        }
+
+    }
+
+    if(encontrou == 0){
+        printf("Livro não encontrado");
+    }
+
+    else{
+        puts(livroBusca.titulo);
+    }
 
 
-
-    maisProximoParcial1 = maisProximo(p1, p2);
-
-    
 
 
 

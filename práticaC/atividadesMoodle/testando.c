@@ -3,12 +3,17 @@
 
 int main(void){
 
-    char str[] = "eu gosto de banana";
+    int i;
 
-    char busca[] = "banana";
+    for(i=0; i < 10; i++){
 
-    if(strstr(str, "banana") == '\0'){
-        printf("contem");
+        if (i == 5){
+            break;
+        }
+
+        printf("%d", i);
+
+
     }
 
 }
