@@ -39,6 +39,7 @@ void estatisitcas(int vitorias[], int empates[], int pontos[]){
 
             }
     }
+    
     printf("%d\n%d", timeMaisPontos1, timeMaisPontos2);
 
 

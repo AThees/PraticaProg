@@ -1,32 +1,14 @@
 #include <stdio.h>
+#include <string.h>
 
 int main(void){
 
-    int i, tamanho;
+    char str[] = "eu gosto de banana";
 
-    float media, soma;
+    char busca[] = "banana";
 
-    soma = 0;
-
-    scanf("%d", &tamanho);
-
-    float vetor[tamanho];
-
-    for(i = 0; i < tamanho; i++){
-
-        scanf("%f", &vetor[i]);
-
+    if(strstr(str, "banana") == '\0'){
+        printf("contem");
     }
 
-    for(i = 0; i < tamanho; i++){
-
-        soma = soma + vetor[i];
-
-    }
-
-    media = (float)soma / (float)tamanho;
-
-    printf("Media = %.2f", media);
-
-    return 0;
 }

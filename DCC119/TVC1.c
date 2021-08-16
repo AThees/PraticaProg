@@ -26,18 +26,6 @@ float CalculaRaizes(float a, float b, float c){
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 int main(void){
 
     float v_a, v_b, v_c, v_retorno;
